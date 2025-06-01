@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026d39f40c4732849bf3dced890f0cb0, type: 3}
+  m_Name: "\uD734\uC2DD"
+  m_EditorClassIdentifier: 
+  scheduleName: "\uC0C8 \uC2A4\uCF00\uC904"
+  description: "\uC131\uACF5 \uD655\uB960:100%\n\uC2A4\uD2B8\uB808\uC2A4 \uBCC0\uD654\uB7C9:
+    -2(\uC131\uACF5),+0(\uC2E4\uD328)\n\uC5F0\uACC4 \uD6A8\uACFC:\uB2E4\uC74C \uC2A4\uCF00\uC904
+    \uC131\uACF5 \uD655\uB960 +10%"
+  icon: {fileID: 0}
+  cost: 1
+  baseSuccessRate: 1
+  primaryTargetStat: 0
+  primaryStatImprovementAmount: 0
+  stressChangeOnSuccess: -2
+  stressChangeOnFailure: 0
+  canFormConsecutiveBundle: 0
+  minItemsForConsecutiveEffect: 2
+  consecutiveSuccessRateModifierPerN: 0
+  consecutiveStatBonus: 0
+  applyStatBonusPerItemInBundle: 0
+  maxNForSuccessRatePenaltyStack: 0
+  outgoingLinkEffectRules:
+  - targetNextScheduleCondition: {fileID: 11400000, guid: ab7bf047af1f1824aa193ac105c073e3, type: 2}
+    effectToApplyOnNextSchedule: {fileID: 11400000, guid: 98a61c33c8268fa49afc7e26f23ed5b2, type: 2}
