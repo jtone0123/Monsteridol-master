@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: da19f2418260f7e40a88bda9aedb0999
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5581351589158621574
+    second: spr_vampire_walk_000_0
+  - first:
+      213: 2357544663592264655
+    second: spr_vampire_walk_000_1
+  - first:
+      213: 3588161723734637882
+    second: spr_vampire_walk_000_2
+  - first:
+      213: -4623000564057626704
+    second: spr_vampire_walk_000_3
+  - first:
+      213: 8009789694706257673
+    second: spr_vampire_walk_000_4
+  - first:
+      213: -8047694965163647231
+    second: spr_vampire_walk_000_5
+  - first:
+      213: 2906943336253107845
+    second: spr_vampire_walk_000_6
+  - first:
+      213: -1483468801416319140
+    second: spr_vampire_walk_000_7
+  - first:
+      213: -2883196790411955935
+    second: spr_vampire_walk_000_8
+  - first:
+      213: 4094273652208817026
+    second: spr_vampire_walk_000_9
+  - first:
+      213: -7275609516114439861
+    second: spr_vampire_walk_000_10
+  - first:
+      213: -2393556796635999191
+    second: spr_vampire_walk_000_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 385
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6819c56f2b1f47d40800000000000000
+      internalID: 5581351589158621574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 385
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3e887716ea7b020800000000000000
+      internalID: 2357544663592264655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 385
+        width: 37
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d3bdba316bbc130800000000000000
+      internalID: 3588161723734637882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 385
+        width: 33
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b72aee0b7dc7dfb0800000000000000
+      internalID: -4623000564057626704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 257
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f0d862a4d782f60800000000000000
+      internalID: 8009789694706257673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 257
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f98b45118d05090800000000000000
+      internalID: -8047694965163647231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 257
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e2e8b0099875820800000000000000
+      internalID: 2906943336253107845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 257
+        width: 55
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fa4302cf8a96be0800000000000000
+      internalID: -1483468801416319140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 129
+        width: 36
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121f2f18bc3dcf7d0800000000000000
+      internalID: -2883196790411955935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 129
+        width: 34
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d52db138c1d830800000000000000
+      internalID: 4094273652208817026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 129
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b411c8361b7d70b90800000000000000
+      internalID: -7275609516114439861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_vampire_walk_000_11
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 129
+        width: 47
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9241aca66c068ced0800000000000000
+      internalID: -2393556796635999191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bc6ca97ef90ca17489f335ec0a84d9e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spr_vampire_walk_000_0: 5581351589158621574
+      spr_vampire_walk_000_1: 2357544663592264655
+      spr_vampire_walk_000_10: -7275609516114439861
+      spr_vampire_walk_000_11: -2393556796635999191
+      spr_vampire_walk_000_2: 3588161723734637882
+      spr_vampire_walk_000_3: -4623000564057626704
+      spr_vampire_walk_000_4: 8009789694706257673
+      spr_vampire_walk_000_5: -8047694965163647231
+      spr_vampire_walk_000_6: 2906943336253107845
+      spr_vampire_walk_000_7: -1483468801416319140
+      spr_vampire_walk_000_8: -2883196790411955935
+      spr_vampire_walk_000_9: 4094273652208817026
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

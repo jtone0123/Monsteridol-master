@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 93ccbee825cdf0c41a9afc6d23d71d0d
+guid: 2cb75253030666f46abdd84a8b22cf4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1293145869664198516
-    second: "1. \uBCF4\uCEEC \uC5F0\uC2B5_0"
+      213: -4439650668731410073
+    second: spr_architecture_room_000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "1. \uBCF4\uCEEC \uC5F0\uC2B5_0"
+      name: spr_architecture_room_000_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8
-        width: 285
-        height: 104
+        x: 73
+        y: 191
+        width: 366
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47f191c215d22f110800000000000000
-      internalID: 1293145869664198516
+      spriteID: 76950733d313362c0800000000000000
+      internalID: -4439650668731410073
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "1. \uBCF4\uCEEC \uC5F0\uC2B5_0": 1293145869664198516
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

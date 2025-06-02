@@ -26,10 +26,13 @@ public class IdolMovement : MonoBehaviour
     public Action<NavPoint> OnArrivedAtTargetPoint;
     private NavPoint currentTargetNavPointObject; // 현재 이동 목표 NavPoint 객체
 
+    private Animator animator;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -88,7 +91,7 @@ public class IdolMovement : MonoBehaviour
         currentTargetNavPointObject = targetNavPoint;
         currentTargetPosition = targetNavPoint.GetPosition();
         isMoving = true; // 이동 시작 플래그
-
+        animator?.SetBool("isWalking", true); // 애니메이션 상태 업데이트
         Vector2 initialDirection = (currentTargetPosition - (Vector2)transform.position).normalized;
         if (initialDirection.sqrMagnitude > 0.01f)
         {
@@ -100,7 +103,7 @@ public class IdolMovement : MonoBehaviour
     {
         // 이 함수에 진입했다는 것은 도착했다는 의미
         // Debug.Log(gameObject.name + " - IdolMovement: ArrivedAtTarget() 내부 진입. isMoving: " + isMoving + ", currentTarget: " + (currentTargetNavPointObject == null ? "NULL" : currentTargetNavPointObject.pointName));
-
+        animator?.SetBool("isWalking", false); // 애니메이션 상태 업데이트
         // 가장 먼저 isMoving을 false로 설정하여 중복 호출 및 의도치 않은 추가 이동 방지
         isMoving = false;
         rb.linearVelocity = Vector2.zero; // 물리적 움직임도 즉시 정지
@@ -134,6 +137,7 @@ public class IdolMovement : MonoBehaviour
     public void StopMovement()
     {
         isMoving = false;
+        animator?.SetBool("isWalking", false); // 애니메이션 상태 업데이트
         rb.linearVelocity = Vector2.zero;
         currentTargetNavPointObject = null; // 이동 중지 시 현재 목표도 초기화하는 것이 안전할 수 있습니다.
          Debug.Log(gameObject.name + " 이동 중지됨.");

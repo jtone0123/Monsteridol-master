@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 21f479b67d6a04a4f93996fe0b3a7f87
+guid: 3200ee76ac6a08f4c95698b537729b5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3876950233200065432
-    second: "\uC2A4\uD06C\uB9B0\uC0F7 2025-05-18 210109_0"
+      213: -8500166841215513795
+    second: spr_furniture_desk_000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC2A4\uD06C\uB9B0\uC0F7 2025-05-18 210109_0"
+      name: spr_furniture_desk_000_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 386
-        height: 88
+        x: 14
+        y: 385
+        width: 100
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89bf1c532b1bdc530800000000000000
-      internalID: 3876950233200065432
+      spriteID: d3b8bc13b47590a80800000000000000
+      internalID: -8500166841215513795
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\uC2A4\uD06C\uB9B0\uC0F7 2025-05-18 210109_0": 3876950233200065432
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

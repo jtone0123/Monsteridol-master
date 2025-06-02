@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9897bb6a35955b248b621773bc89f0eb
+guid: 1b581183df0bdb2488c6080db9e90cd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8393952506099750953
-    second: "5. \uC548\uC815\uD654 \uC57D\uBB3C_0"
+      213: 2363425384888628886
+    second: spr_furniture_bookcase_000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "5. \uC548\uC815\uD654 \uC57D\uBB3C_0"
+      name: spr_furniture_bookcase_000_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 285
-        height: 104
+        x: 39
+        y: 385
+        width: 50
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d7ac643ba0b28b80800000000000000
-      internalID: -8393952506099750953
+      spriteID: 6967d679dd29cc020800000000000000
+      internalID: 2363425384888628886
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "5. \uC548\uC815\uD654 \uC57D\uBB3C_0": -8393952506099750953
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

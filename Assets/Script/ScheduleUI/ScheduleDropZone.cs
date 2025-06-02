@@ -25,6 +25,19 @@ public class ScheduleDropZone : MonoBehaviour
     private List<Tween> activeItemTweens = new List<Tween>();
     // private Transform lastValidDropZone = null; // 현재 직접적인 사용처가 명확하지 않아 주석 처리 또는 제거 고려
 
+    private void Awake()
+    {
+        if(!isQueueDropZone)
+        {
+            AvailableScheduleManager.Instance.availableSchelueZone = this;
+        }
+        else
+        {
+            Debug.Log("이용가능한 스케줄 표시 UI 없음");
+        }
+    }
+
+
     private struct ItemLayoutState
     {
         public RectTransform rt;
