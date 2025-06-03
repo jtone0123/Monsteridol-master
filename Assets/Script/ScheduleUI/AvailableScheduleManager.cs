@@ -16,13 +16,23 @@ public class AvailableScheduleManager : MonoBehaviour
     }
 
 
-    public void AddAvailableSchedule(List<GameObject> schedules)
+    private void UpdateSchedule()
     {
-       foreach (GameObject schedule in schedules)
+       foreach (GameObject schedulePrefab in SchedulePrefabs)
         {
-            availableSchedules.Add(Instantiate(schedule, availableSchelueZone.transform));
-            availableSchelueZone.RefreshLayout(true, false);
+            availableSchedules.Add(Instantiate(schedulePrefab, availableSchelueZone.transform));
+            
         }
+        availableSchelueZone.RefreshLayout(true, false);
+    }
+
+    public void AddSchedule(List<GameObject> schedules)
+    {
+        foreach(GameObject schedule in schedules)
+        {
+            SchedulePrefabs.Add(schedule);
+        }
+        UpdateSchedule();
     }
 
 
@@ -31,7 +41,7 @@ public class AvailableScheduleManager : MonoBehaviour
     {
         if (SchedulePrefabs.Count > 0 && SchedulePrefabs != null)
         {
-            AddAvailableSchedule(SchedulePrefabs);
+            UpdateSchedule();
             
         }
     }
