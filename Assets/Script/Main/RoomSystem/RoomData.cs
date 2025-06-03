@@ -17,6 +17,7 @@ namespace RoomPlacementSystem
         public GameObject roomPrefab; // 실제로 슬롯에 배치될 방의 게임오브젝트 프리팹
 
         [Header("스케줄 관련")]
-        public List<GameObject> GeneratedSchdules; 
+        public List<GameObject> GeneratedSchdules;
+        public float scheduleTurnLate;
     }
 }

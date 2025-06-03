@@ -1,22 +1,45 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using Unity.VisualScripting;
 
 
 public class AvailableScheduleManager : MonoBehaviour
 {
 
+    //싱글톤
     public static AvailableScheduleManager Instance { get; private set; }
-    public List<GameObject> SchedulePrefabs = new List<GameObject>();
+
     private List<GameObject> availableSchedules = new List<GameObject>();
+    public List<GameObject> SchedulePrefabs = new List<GameObject>();
+
     public ScheduleDropZone availableSchelueZone;
+
+    public float LimitSchedule = 6f;
+
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        //availableSchelueZone = FindAnyObjectByType<ScheduleDropZone>();
+        if (availableSchelueZone == null)
+        {
+            Debug.Log("스케줄 이용 창 없음");
+        }
+
+        
     }
 
+    
 
-    private void UpdateSchedule()
+    public void UpdateSchedule()
     {
        foreach (GameObject schedulePrefab in SchedulePrefabs)
         {
@@ -28,11 +51,12 @@ public class AvailableScheduleManager : MonoBehaviour
 
     public void AddSchedule(List<GameObject> schedules)
     {
+        
         foreach(GameObject schedule in schedules)
         {
-            SchedulePrefabs.Add(schedule);
+            availableSchedules.Add(Instantiate(schedule, availableSchelueZone.transform));
         }
-        UpdateSchedule();
+        availableSchelueZone.RefreshLayout(true, false);
     }
 
 

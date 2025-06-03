@@ -27,14 +27,7 @@ public class ScheduleDropZone : MonoBehaviour
 
     private void Awake()
     {
-        if(!isQueueDropZone)
-        {
-            AvailableScheduleManager.Instance.availableSchelueZone = this;
-        }
-        else
-        {
-            Debug.Log("이용가능한 스케줄 표시 UI 없음");
-        }
+        
     }
 
 

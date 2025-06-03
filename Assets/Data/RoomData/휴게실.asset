@@ -15,3 +15,6 @@ MonoBehaviour:
   roomName: "\uC0C8 \uBC29"
   roomIcon: {fileID: 7482667652216324306, guid: 77e6951f61c58e244a90d0aa68446f27, type: 3}
   roomPrefab: {fileID: 8067762775925473728, guid: cb3fff5349405e140944bfe2d8dd3edf, type: 3}
+  GeneratedSchdules:
+  - {fileID: 6430833801782886495, guid: 413a073da9a7d9b469a5e07c03a753a5, type: 3}
+  scheduleTurnLate: 3

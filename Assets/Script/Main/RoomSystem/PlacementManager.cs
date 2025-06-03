@@ -164,6 +164,8 @@ namespace RoomPlacementSystem
                     finalDropTargetSlot.ConfirmTemporaryPreviewAsPlaced(_selectedRoomData, _tempPreviewInstance);
                     _tempPreviewInstance = null; // 이제 더 이상 임시가 아님, 소유권 이전
                     placedSuccessfully = true;
+                    Destroy(_sourceDragItem.gameObject);
+                    
                 }
                 else // 임시 미리보기가 없거나 다른 슬롯에 있었다면 새로 생성
                 {
