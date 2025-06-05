@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - ScheduleTarget
+  - Idol
+  - Hallway
+  - Room
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class ScheduleData : ScriptableObject
     [TextArea(3, 5)]
     public string description = "스케줄에 대한 설명입니다.";
     public Sprite icon;
-    public int cost = 1; // 스케줄 실행 비용 (예: 행동력)
+    public int size = 1; // 스케줄 실행 비용 
 
     [Header("실행 효과")]
     [Range(0f, 1f)] // 0.0 (0%) ~ 1.0 (100%)
