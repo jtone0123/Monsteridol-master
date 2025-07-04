@@ -51,12 +51,19 @@ public class DragableItem : MonoBehaviour,IBeginDragHandler, IEndDragHandler,IDr
     public void OnDrag(PointerEventData eventData)
     {
         RectTransform.anchoredPosition += eventData.delta / rootCanvas.scaleFactor;
-
+        
         
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        GameObject dropTarget = eventData.pointerCurrentRaycast.gameObject;
+
+        if(dropTarget && dropTarget.GetComponent<IdolItemDrop>())
+        {
+            dropTarget.GetComponent<IdolItemDrop>().ApplyItemdata(itemData);
+        }
+
         canvasGroup.blocksRaycasts = true;
 
         transform.SetParent(originalParent);

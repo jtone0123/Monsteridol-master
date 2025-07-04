@@ -99,6 +99,24 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ClikAction"",
+                    ""type"": ""Button"",
+                    ""id"": ""910fb44f-6112-4fd0-bf97-477fff3bc55b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Position"",
+                    ""type"": ""Value"",
+                    ""id"": ""4a49d039-6bc7-4bbf-afee-ad80261dbb1f"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -123,6 +141,28 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""ExecuteSchedule"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""50f93898-a681-4707-b918-e05b1f3642cc"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ClikAction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71231453-c470-4444-ab00-d49de5e2f690"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Position"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -132,6 +172,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         // Gameplay
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_ExecuteSchedule = m_Gameplay.FindAction("ExecuteSchedule", throwIfNotFound: true);
+        m_Gameplay_ClikAction = m_Gameplay.FindAction("ClikAction", throwIfNotFound: true);
+        m_Gameplay_Position = m_Gameplay.FindAction("Position", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -213,6 +255,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Gameplay;
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_ExecuteSchedule;
+    private readonly InputAction m_Gameplay_ClikAction;
+    private readonly InputAction m_Gameplay_Position;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gameplay".
     /// </summary>
@@ -228,6 +272,14 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Gameplay/ExecuteSchedule".
         /// </summary>
         public InputAction @ExecuteSchedule => m_Wrapper.m_Gameplay_ExecuteSchedule;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/ClikAction".
+        /// </summary>
+        public InputAction @ClikAction => m_Wrapper.m_Gameplay_ClikAction;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/Position".
+        /// </summary>
+        public InputAction @Position => m_Wrapper.m_Gameplay_Position;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -257,6 +309,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @ExecuteSchedule.started += instance.OnExecuteSchedule;
             @ExecuteSchedule.performed += instance.OnExecuteSchedule;
             @ExecuteSchedule.canceled += instance.OnExecuteSchedule;
+            @ClikAction.started += instance.OnClikAction;
+            @ClikAction.performed += instance.OnClikAction;
+            @ClikAction.canceled += instance.OnClikAction;
+            @Position.started += instance.OnPosition;
+            @Position.performed += instance.OnPosition;
+            @Position.canceled += instance.OnPosition;
         }
 
         /// <summary>
@@ -271,6 +329,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @ExecuteSchedule.started -= instance.OnExecuteSchedule;
             @ExecuteSchedule.performed -= instance.OnExecuteSchedule;
             @ExecuteSchedule.canceled -= instance.OnExecuteSchedule;
+            @ClikAction.started -= instance.OnClikAction;
+            @ClikAction.performed -= instance.OnClikAction;
+            @ClikAction.canceled -= instance.OnClikAction;
+            @Position.started -= instance.OnPosition;
+            @Position.performed -= instance.OnPosition;
+            @Position.canceled -= instance.OnPosition;
         }
 
         /// <summary>
@@ -318,5 +382,19 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnExecuteSchedule(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ClikAction" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnClikAction(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Position" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPosition(InputAction.CallbackContext context);
     }
 }

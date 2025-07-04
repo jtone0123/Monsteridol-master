@@ -14,7 +14,7 @@ public class ManagedIdol
 {
     public string idolName; // 식별을 위한 아이돌 이름 (IdolCharacter.characterName과 동기화 가능)
     public IdolCharacter idolCharacter;       // 아이돌의 스탯 및 기본 정보
-    public Idol idolMovementController;      // 아이돌의 이동 및 NavPoint 관련 로직
+    public Idol idolMovementController;      // 아이돌의 이동 및 navPoint 관련 로직
     public ScheduleDropZone scheduleQueueUI; // 해당 아이돌의 스케줄 큐 UI (RectTransform을 가진 Panel 등)
     public NextScheduleModifiers pendingModifiers; // 해당 아이돌의 다음 스케줄에 적용될 보정치
     // public Coroutine currentProcessingCoroutine; // 병렬 처리 시 개별 코루틴 참조는 관리 복잡성 증가로 isProcessingComplete로 대체
@@ -240,14 +240,14 @@ public class GlobalScheduleExecutor : MonoBehaviour
                 Debug.Log($"아이돌 '{idolCharacter.characterName}': '{currentScheduleData.scheduleName}' 스케줄 묶음 (크기: {bundleSizeN}) 처리 시작.");
 
                 ScheduleNavType scheduleNavType = firstScheduleItemInQueue.GetComponent<ScheduleNavType>();
-                if (scheduleNavType != null && scheduleNavType.NavPoint != null)
+                if (scheduleNavType != null && scheduleNavType.navPoint != null)
                 {
-                    Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.NavPoint.pointName}'으로 이동 시작.");
+                    Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.navPoint.pointName}'으로 이동 시작.");
 
                     // 이동 전 콜백 등록 및 플래그 초기화
                     hasArrivedForCurrentSchedule = false; // 도착 플래그 재설정
                     idolMovement.OnArrivedAtTarget += arrivalCallback;
-                    idolMovement.AssignScheduledTarget(scheduleNavType.NavPoint);
+                    idolMovement.AssignScheduledTarget(scheduleNavType.navPoint);
 
                     // 도착 대기: hasArrivedForCurrentSchedule가 true가 되거나, 이동이 멈췄는데 목표가 없는 경우(오류 상황)
                     yield return new WaitUntil(() => hasArrivedForCurrentSchedule || (idolMovement.finalScheduledTarget == null));
@@ -261,11 +261,11 @@ public class GlobalScheduleExecutor : MonoBehaviour
                     }
                     else if (hasArrivedForCurrentSchedule)
                     {
-                        Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.NavPoint.pointName}' 도착.");
+                        Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.navPoint.pointName}' 도착.");
                     }
                     else
                     {
-                        Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.NavPoint.pointName}'로의 이동이 완료되었거나 중단되었습니다 (도착 콜백 미호출).");
+                        Debug.Log($"아이돌 '{idolCharacter.characterName}': '{scheduleNavType.navPoint.pointName}'로의 이동이 완료되었거나 중단되었습니다 (도착 콜백 미호출).");
                     }
                 }
                 else

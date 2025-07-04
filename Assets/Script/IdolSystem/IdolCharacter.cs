@@ -13,6 +13,7 @@ public class IdolCharacter : MonoBehaviour
     public Dictionary<StatType, int> stats = new Dictionary<StatType, int>();
     public int currentStress = 0;
     public int maxStress = 100; // 최대 스트레스 (예시)
+    public int fanCount;
 
     void Awake()
     {

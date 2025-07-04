@@ -1,122 +1,110 @@
-// UIManager.cs
-// Unity UI 패널 전환을 관리하는 스크립트입니다.
-// 이 스크립트를 Canvas나 빈 GameObject("UIManager" 등)에 추가합니다.
-
 using UnityEngine;
-using UnityEngine.UI; // Button과 같은 UI 요소에 접근하려면 필요할 수 있습니다.
-using TMPro;
+using System.Collections.Generic;
+
+// NUnit.Framework와 UnityEngine.UI, TMPro는 현재 코드에서 직접 사용되지 않으므로 제거하거나 필요시 다시 추가합니다.
 
 public class UIManager : MonoBehaviour
 {
-    // Inspector 창에서 연결할 패널들
-    [Header("UI Panels")] // Inspector에서 보기 좋게 그룹화
-    public GameObject mainMenuPanel;          // 메인 메뉴 패널
-    public GameObject scheduleManagementPanel; // 스케줄 관리 패널
-   // public TextMeshProUGUI currentTurnText; // 현재 턴 텍스트 UI
-    // 필요에 따라 다른 패널들도 여기에 추가할 수 있습니다.
-    // public GameObject idolDetailPanel;
-    // public GameObject settingsPanel;
-    //int currentTurn = 0;
+    // 1. 싱글톤 인스턴스
+    public static UIManager instance;
 
-    //public void CurrentTurnUpdate()
-    //{
-     //   currentTurn++;
-     //   currentTurnText.text = $"<size=200>{currentTurn}</size>";
-   // }
-    void Start()
+    // 2. 인스펙터에서 UI 상태와 패널 게임오브젝트를 연결할 리스트
+    [System.Serializable]
+    public class UIPanelInfo
     {
-
-        //CurrentTurnUpdate();
-
-        // 게임 시작 시 초기 상태 설정: 메인 메뉴만 활성화
-        if (mainMenuPanel != null)
-        {
-            mainMenuPanel.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("메인 메뉴 패널이 UIManager에 할당되지 않았습니다!");
-        }
-
-        if (scheduleManagementPanel != null)
-        {
-            //scheduleManagementPanel.SetActive(false); // 스케줄 관리 패널은 처음에는 비활성화
-        }
-        else
-        {
-            Debug.LogError("스케줄 관리 패널이 UIManager에 할당되지 않았습니다!");
-        }
-
-        // 다른 패널들도 초기에는 비활성화
-        // if (idolDetailPanel != null) idolDetailPanel.SetActive(false);
-        // if (settingsPanel != null) settingsPanel.SetActive(false);
+        public UIState state;
+        public GameObject panel;
     }
 
-    // 스케줄 관리 패널을 보여주는 함수
-    // 이 함수를 메인 메뉴의 "스케줄 설정" 버튼의 OnClick 이벤트에 연결합니다.
-    public void ShowScheduleManagementPanel()
-    {
-        if (mainMenuPanel != null)
-        {
-            mainMenuPanel.SetActive(false); // 메인 메뉴 패널 숨기기
-        }
+    [Header("UI 패널 정보")]
+    [SerializeField] private List<UIPanelInfo> panelInfos;
 
-        if (scheduleManagementPanel != null)
+    // 3. UI 상태 Enum (기존과 동일)
+    public enum UIState
+    {
+        mainMenuPanel,
+        scheduleManagementPanel,
+        roomPlacementPanel,
+        itemUsingPanel
+    }
+
+    // 4. 패널 관리를 위한 Dictionary
+    private Dictionary<UIState, GameObject> panelDictionary = new Dictionary<UIState, GameObject>();
+
+    // 5. 현재 UI 상태 (외부에서 읽기만 가능하도록 private set 추가)
+    public UIState CurrentState { get; private set; }
+
+    private void Awake()
+    {
+        // 싱글톤 패턴 초기화 (안전성 강화)
+        if (instance == null)
         {
-            scheduleManagementPanel.SetActive(true); // 스케줄 관리 패널 보이기
+            instance = this;
         }
         else
         {
-            Debug.LogError("스케줄 관리 패널을 찾을 수 없습니다. UIManager에 할당되었는지 확인해주세요.");
+            // 중복 인스턴스가 생성될 경우 이 게임오브젝트를 파괴
+            Destroy(gameObject);
+            return;
+        }
+
+        // 6. 인스펙터에서 설정한 리스트를 바탕으로 Dictionary 자동 생성
+        foreach (var info in panelInfos)
+        {
+            if (info.panel != null && !panelDictionary.ContainsKey(info.state))
+            {
+                panelDictionary.Add(info.state, info.panel);
+            }
         }
     }
 
-    // 메인 메뉴 패널을 보여주는 함수
-    // 이 함수는 스케줄 관리 패널의 "뒤로가기" 또는 "메인으로" 버튼의 OnClick 이벤트에 연결할 수 있습니다.
-    public void ShowMainMenuPanel()
+    private void Start()
     {
-        if (scheduleManagementPanel != null)
+        // 7. 시작 시 모든 패널을 비활성화하고 메인 메뉴만 표시
+        foreach (var panel in panelDictionary.Values)
         {
-            scheduleManagementPanel.SetActive(false); // 스케줄 관리 패널 숨기기
+            panel.SetActive(false);
         }
-
-        if (mainMenuPanel != null)
-        {
-            mainMenuPanel.SetActive(true); // 메인 메뉴 패널 보이기
-        }
-        else
-        {
-            Debug.LogError("메인 메뉴 패널을 찾을 수 없습니다. UIManager에 할당되었는지 확인해주세요.");
-        }
+        ShowPanel(UIState.mainMenuPanel);
     }
 
-    // (선택 사항) 다른 패널들을 위한 함수들
-    // public void ShowIdolDetailPanel()
-    // {
-    //     if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
-    //     if (idolDetailPanel != null) idolDetailPanel.SetActive(true);
-    // }
-
-    // public void ShowSettingsPanel()
-    // {
-    //     if (mainMenuPanel != null) mainMenuPanel.SetActive(false);
-    //     if (settingsPanel != null) settingsPanel.SetActive(true);
-    // }
-
-    // 모든 활성 패널을 닫고 메인 메뉴로 돌아가는 함수 (일괄 처리용)
-    public void CloseAllPanelsAndShowMain()
+    // 8. Enum을 직접 받아 패널을 보여주는 메서드
+    public void ShowPanel(UIState stateToShow)
     {
-        if (scheduleManagementPanel != null) scheduleManagementPanel.SetActive(false);
-        // if (idolDetailPanel != null) idolDetailPanel.SetActive(false);
-        // if (settingsPanel != null) settingsPanel.SetActive(false);
-
-        if (mainMenuPanel != null)
+        // 요청된 상태가 Dictionary에 없으면 오류를 출력하고 종료
+        if (!panelDictionary.ContainsKey(stateToShow))
         {
-            mainMenuPanel.SetActive(true);
+            Debug.LogError($"[UIManager] '{stateToShow}'에 해당하는 패널이 등록되지 않았습니다.");
+            return;
+        }
+
+        // 모든 패널을 순회하며 상태에 맞는 패널만 활성화
+        foreach (var entry in panelDictionary)
+        {
+            bool isActive = entry.Key == stateToShow;
+            if (entry.Value.activeSelf != isActive) // 불필요한 SetActive 호출 방지
+            {
+                entry.Value.SetActive(isActive);
+            }
+        }
+
+        // 현재 상태 업데이트
+        CurrentState = stateToShow;
+    }
+
+    // (참고) 버튼의 OnClick 이벤트 등에서 int 값을 사용해야 할 경우
+    // 이 메서드를 통해 enum으로 변환하여 ShowPanel을 호출할 수 있습니다.
+    public void ShowPanelByIndex(int index)
+    {
+        // int 값이 UIState enum의 유효한 범위 내에 있는지 확인
+        if (System.Enum.IsDefined(typeof(UIState), index))
+        {
+            UIState state = (UIState)index;
+            ShowPanel(state);
         }
         else
         {
-            Debug.LogError("메인 메뉴 패널을 찾을 수 없습니다. UIManager에 할당되었는지 확인해주세요.");
+            Debug.LogError($"[UIManager] 잘못된 인덱스({index})가 전달되었습니다.");
         }
     }
 }

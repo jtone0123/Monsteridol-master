@@ -17,7 +17,7 @@ MonoBehaviour:
     -2(\uC131\uACF5),+0(\uC2E4\uD328)\n\uC5F0\uACC4 \uD6A8\uACFC:\uB2E4\uC74C \uC2A4\uCF00\uC904
     \uC131\uACF5 \uD655\uB960 +10%"
   icon: {fileID: 0}
-  cost: 1
+  size: 1
   baseSuccessRate: 1
   primaryTargetStat: 0
   primaryStatImprovementAmount: 0
