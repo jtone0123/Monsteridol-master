@@ -45,7 +45,7 @@ public class Idol : MonoBehaviour
     // private bool needsToUseStairs = false; // 이 변수는 이제 DeterminePath에서 매번 판단하므로 클래스 멤버일 필요는 없을 수 있음
     private bool isCurrentlyUsingStairsProcess = false; // 현재 계단을 '이용'하는 과정 중인가? (순간이동 처리용)
 
-    // navPoint 관리 (HubManager가 이상적이지만, 여기서는 간단히 처리)
+    // targetNavPoint 관리 (HubManager가 이상적이지만, 여기서는 간단히 처리)
     private static List<NavPoint> allNavPointsInScene = new List<NavPoint>();
 
     void Awake()

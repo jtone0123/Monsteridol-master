@@ -254,7 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b97bedd79f13994d91828693fc22a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NavPoint: {fileID: 0}
+  navPoint: {fileID: 0}
+  type: 5
 --- !u!114 &7140863029015128396
 MonoBehaviour:
   m_ObjectHideFlags: 0

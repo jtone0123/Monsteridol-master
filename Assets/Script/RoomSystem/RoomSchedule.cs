@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using RoomPlacementSystem;
 
 
-public class RoomSchedule : MonoBehaviour, IPointerClickHandler
+public class RoomSchedule : MonoBehaviour, IClickable
 {
     public RoomData roomData;
 
@@ -50,12 +50,12 @@ public class RoomSchedule : MonoBehaviour, IPointerClickHandler
         CurrentTurnLate = oringinalScheduleTurnLate;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    
+    public void OnClick()
     {
         Debug.Log("Å¬¸¯µÊ");
         GetSchedule();
     }
-
     public void GetSchedule()
     {
         if (CurrentTurnLate <= 0)
@@ -79,5 +79,5 @@ public class RoomSchedule : MonoBehaviour, IPointerClickHandler
         
     }
 
-   
+    
 }

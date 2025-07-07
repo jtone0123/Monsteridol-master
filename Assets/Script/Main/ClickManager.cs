@@ -43,12 +43,7 @@ public class ClickManager : MonoBehaviour
             
             
             hit.collider.GetComponent<IClickable>()?.OnClick();
-            // IClickable 인터페이스가 있다면 OnClick() 메서드를 호출합니다.
-           
-            // 또는 특정 태그를 가진 오브젝트인지 확인할 수도 있습니다.
-            // if(hit.collider.CompareTag("Enemy")) { ... }
-
-            Debug.Log($"Clicked on: {hit.collider.name}");
+          
         }
     }
 

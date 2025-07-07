@@ -194,6 +194,7 @@ public class DraggableScheduleItem : MonoBehaviour, IBeginDragHandler, IDragHand
         {
             Debug.Log($"[{ItemNameDebug}] 아이템이 '{finalDropZone.name}' (Queue Zone)에 드롭됨.");
             finalDropZone.HandleItemDrop(this);
+            UIManager.instance.UnAvailavleNextTurn();
         }
         else
         {

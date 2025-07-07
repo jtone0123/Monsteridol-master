@@ -15,7 +15,7 @@ public class ScheduleData : ScriptableObject
     public string description = "스케줄에 대한 설명입니다.";
     public Sprite icon;
     public int size = 1; // 스케줄 실행 비용 
-    
+    public int price;
 
 
 

@@ -3,7 +3,7 @@ using UnityEngine;
 public class ScheduleNavType : MonoBehaviour
 {
 
-    public NavPoint navPoint;
+    public NavPoint targetNavPoint;
     public NavPoint.PointType type;
 
     public void FindNavPoint()
@@ -13,11 +13,11 @@ public class ScheduleNavType : MonoBehaviour
         {
             if(navPoint.type == type)
             {
-                
+                targetNavPoint = navPoint;
             }
         }
     }
-
+    //추후 수정 필요
     private void Awake()
     {
         

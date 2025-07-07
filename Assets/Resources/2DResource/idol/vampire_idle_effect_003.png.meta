@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vampire_idle_effect_003_0: -8008159046533697743
+      vampire_idle_effect_003_1: -5731851876524865411
+      vampire_idle_effect_003_2: 7033625248364304649
+      vampire_idle_effect_003_3: -7287561082332581807
+      vampire_idle_effect_003_4: -8582392236599251907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

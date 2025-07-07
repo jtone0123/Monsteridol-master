@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1286345248257856880}
   - component: {fileID: 8735449879568249000}
   - component: {fileID: 5863278796347314702}
+  - component: {fileID: 94045519805693649}
+  - component: {fileID: 1877728391740385718}
   m_Layer: 3
   m_Name: VampierIdol_Prefab
   m_TagString: Untagged
@@ -210,3 +212,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &94045519805693649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757451536954860561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64b53f3b3fbdd943b14c59073173502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1877728391740385718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757451536954860561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcf33bad8475234d927a07ed262b204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: idol
+  currentStress: 0
+  maxStress: 100
+  fanCount: 0

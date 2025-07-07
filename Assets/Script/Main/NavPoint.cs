@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 
-// navPoint.cs
+// targetNavPoint.cs
 // 허브 공간 내 특정 지점을 나타내는 클래스입니다.
 // 아이돌이 이동하거나 상호작용할 목표 지점으로 사용됩니다.
 public class NavPoint : MonoBehaviour

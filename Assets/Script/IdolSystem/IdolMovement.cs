@@ -24,7 +24,7 @@ public class IdolMovement : MonoBehaviour
 
     // 목표 지점 도착 시 호출될 액션(콜백)
     public Action<NavPoint> OnArrivedAtTargetPoint;
-    private NavPoint currentTargetNavPointObject; // 현재 이동 목표 navPoint 객체
+    private NavPoint currentTargetNavPointObject; // 현재 이동 목표 targetNavPoint 객체
 
     private Animator animator;
     private Animator effector;
@@ -33,7 +33,11 @@ public class IdolMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        effector = transform.GetChild(0).GetComponent<Animator>();
+        if(transform.childCount > 0)
+        {
+            effector = transform.GetChild(0).GetComponent<Animator>();
+        }
+       
 
 
     }

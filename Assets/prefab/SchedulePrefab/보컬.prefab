@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8588208088540536193}
   - component: {fileID: 3543163063466360934}
   - component: {fileID: 3395517001441962127}
+  - component: {fileID: -3288169580539449635}
   m_Layer: 5
   m_Name: "\uBCF4\uCEEC"
   m_TagString: Untagged
@@ -125,6 +126,20 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1
+--- !u!114 &-3288169580539449635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99973229279824574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b97bedd79f13994d91828693fc22a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navPoint: {fileID: 0}
+  type: 0
 --- !u!1 &1493792546726184745
 GameObject:
   m_ObjectHideFlags: 0

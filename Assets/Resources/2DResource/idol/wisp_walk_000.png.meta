@@ -1,0 +1,497 @@
+fileFormatVersion: 2
+guid: c02328aaf0870224395028bd6f4ef238
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7667672319287923614
+    second: wisp_walk_000_0
+  - first:
+      213: -4593109128072917167
+    second: wisp_walk_000_1
+  - first:
+      213: -1537117118218707963
+    second: wisp_walk_000_2
+  - first:
+      213: 2068519217198427084
+    second: wisp_walk_000_3
+  - first:
+      213: -4102229665125472880
+    second: wisp_walk_000_4
+  - first:
+      213: -1374098577485071712
+    second: wisp_walk_000_5
+  - first:
+      213: 6798090574180289646
+    second: wisp_walk_000_6
+  - first:
+      213: -50683194411680399
+    second: wisp_walk_000_7
+  - first:
+      213: 6836384237957993839
+    second: wisp_walk_000_8
+  - first:
+      213: -5177347294415828211
+    second: wisp_walk_000_9
+  - first:
+      213: 120901615459437163
+    second: wisp_walk_000_10
+  - first:
+      213: 8276706144556041095
+    second: wisp_walk_000_11
+  - first:
+      213: 1342121085353034361
+    second: wisp_walk_000_12
+  - first:
+      213: 4979641535342267231
+    second: wisp_walk_000_13
+  - first:
+      213: -8042716589275691832
+    second: wisp_walk_000_14
+  - first:
+      213: -8778971995521577646
+    second: wisp_walk_000_15
+  - first:
+      213: 2810746995562064498
+    second: wisp_walk_000_16
+  - first:
+      213: 1650846165974113002
+    second: wisp_walk_000_17
+  - first:
+      213: 6975851998413954475
+    second: wisp_walk_000_18
+  - first:
+      213: -5105568916081430955
+    second: wisp_walk_000_19
+  - first:
+      213: 7158444110880288349
+    second: wisp_walk_000_20
+  - first:
+      213: -5405429243435542958
+    second: wisp_walk_000_21
+  - first:
+      213: 3870491894710304105
+    second: wisp_walk_000_22
+  - first:
+      213: -8585170282070563455
+    second: wisp_walk_000_23
+  - first:
+      213: 2702818545984882501
+    second: wisp_walk_000_24
+  - first:
+      213: -1117265733429418184
+    second: wisp_walk_000_25
+  - first:
+      213: 4036553580865039195
+    second: wisp_walk_000_26
+  - first:
+      213: 6496056813028123723
+    second: wisp_walk_000_27
+  - first:
+      213: -2200841069966581095
+    second: wisp_walk_000_28
+  - first:
+      213: -7710632619421157742
+    second: wisp_walk_000_29
+  - first:
+      213: -3241863512345126260
+    second: wisp_walk_000_30
+  - first:
+      213: -2404401001458770500
+    second: wisp_walk_000_31
+  - first:
+      213: 3992730016959754271
+    second: wisp_walk_000_32
+  - first:
+      213: -1728867751216085313
+    second: wisp_walk_000_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wisp_walk_000_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 383
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cd66eff101baae0800000000000000
+      internalID: -1537117118218707963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_4
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 383
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0956027aad3f117c0800000000000000
+      internalID: -4102229665125472880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 383
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaf1a2cf983eece0800000000000000
+      internalID: -1374098577485071712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 383
+        width: 53
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c82f00c5ba75e50800000000000000
+      internalID: 6798090574180289646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 255
+        width: 48
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972870a240c20a210800000000000000
+      internalID: 1342121085353034361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 255
+        width: 57
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b4bd6d79d3b1540800000000000000
+      internalID: 4979641535342267231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_15
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 255
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d85d9ab73da2680800000000000000
+      internalID: -8778971995521577646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 255
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aead3b567dbf8e610800000000000000
+      internalID: 1650846165974113002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_20
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 127
+        width: 53
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ea185edf6e75360800000000000000
+      internalID: 7158444110880288349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_22
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 127
+        width: 41
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d7c3a1fdfb6b530800000000000000
+      internalID: 3870491894710304105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_23
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 127
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185a1f85d195bd880800000000000000
+      internalID: -8585170282070563455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wisp_walk_000_29
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 127
+        width: 53
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296bcdd3c745ef490800000000000000
+      internalID: -7710632619421157742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f9120d4960d489644899e5aca8d73254
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wisp_walk_000_0: 274095042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

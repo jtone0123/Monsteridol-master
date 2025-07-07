@@ -8,6 +8,10 @@ public class UIManager : MonoBehaviour
     // 1. 싱글톤 인스턴스
     public static UIManager instance;
 
+
+    public GameObject turnButton;
+    public GameObject startButton;
+
     // 2. 인스펙터에서 UI 상태와 패널 게임오브젝트를 연결할 리스트
     [System.Serializable]
     public class UIPanelInfo
@@ -66,6 +70,7 @@ public class UIManager : MonoBehaviour
             panel.SetActive(false);
         }
         ShowPanel(UIState.mainMenuPanel);
+        AvailableNextTurn();
     }
 
     // 8. Enum을 직접 받아 패널을 보여주는 메서드
@@ -90,6 +95,19 @@ public class UIManager : MonoBehaviour
 
         // 현재 상태 업데이트
         CurrentState = stateToShow;
+    }
+
+
+    public void AvailableNextTurn()
+    {
+        startButton.SetActive(false);
+        turnButton.SetActive(true);
+    }
+
+    public void UnAvailavleNextTurn()
+    {
+        startButton.SetActive(true);
+        turnButton.SetActive(false);
     }
 
     // (참고) 버튼의 OnClick 이벤트 등에서 int 값을 사용해야 할 경우

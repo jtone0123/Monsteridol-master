@@ -17,7 +17,10 @@ public class MoneyManager : MonoBehaviour
         currentMoney += amount;
     }
 
-
+    public void PayMoney(int amount)
+    {
+        currentMoney -= amount;
+    }
     private void Awake()
     {
         if(Instance != null)
