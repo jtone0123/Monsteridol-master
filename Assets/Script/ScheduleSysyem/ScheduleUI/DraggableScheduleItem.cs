@@ -24,6 +24,12 @@ public class DraggableScheduleItem : MonoBehaviour, IBeginDragHandler, IDragHand
     private float pointerDownTimer = 0f;     // 포인터가 눌린 시간
     private bool isDescriptionCurrentlyShown = false; // 이 아이템에 의해 설명이 표시되었는지
 
+    public void SetUP(ScheduleData schData)
+    {
+        scheduleData = schData;
+        transform.GetComponent<Image>().sprite = schData.icon;
+    }
+
     public string ItemNameDebug
     {
         get { return scheduleData != null ? scheduleData.scheduleName : gameObject.name; }

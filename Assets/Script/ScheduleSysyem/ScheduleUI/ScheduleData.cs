@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // IdolCharacter.cs 에도 동일한 StatType enum이 있어야 합니다.
 // public enum StatType { None, Vocal, Dance, Rap, Visual, Stamina } // 이 부분을 IdolCharacter.cs 와 공유하거나 한 곳에서 정의
@@ -7,13 +8,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewScheduleData", menuName = "MyGame/Schedule Data", order = 1)]
 public class ScheduleData : ScriptableObject
 {
-        
+    
 
     [Header("기본 정보")]
+    public Sprite icon;
     public string scheduleName = "새 스케줄";
     [TextArea(3, 5)]
     public string description = "스케줄에 대한 설명입니다.";
-    public Sprite icon;
+    
     public int size = 1; // 스케줄 실행 비용 
     public int price;
 

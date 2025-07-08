@@ -1,13 +1,15 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using RoomPlacementSystem;
 
 public class ShopManager : MonoBehaviour
 {
 
     public int scheduleCount;
+    public int roomCount;
     public List<ScheduleData> allSchedulCatalog;
-
+    public List<RoomData> allRoomsCatalog;
 
     private List<ScheduleData> generatedSchedlue = new List<ScheduleData>();
     public void GenereateInventory()
@@ -31,17 +33,15 @@ public class ShopManager : MonoBehaviour
     {
         
 
-        // TODO: 실제 플레이어의 골드와 비교하는 로직 필요
-        // 예시: if (PlayerStats.Instance.Gold >= cardToBuy.price)
-        int playerGold = 100; // 임시 플레이어 골드
+        
 
-        if (playerGold >= schedlueToBuy.price)
+        if (MoneyManager.Instance.currentMoney >= schedlueToBuy.price)
         {
             // 골드 차감
             MoneyManager.Instance.PayMoney(schedlueToBuy.price);
 
             // 덱에 카드 추가
-            // PlayerDeck.Instance.AddCard(cardToBuy);
+            AvailableScheduleManager.Instance.AddSchedule(schedlueToBuy);
             
 
             // 해당 슬롯을 '판매 완료'로 표시

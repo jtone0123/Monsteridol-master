@@ -11,7 +11,9 @@ public class AvailableScheduleManager : MonoBehaviour
     public static AvailableScheduleManager Instance { get; private set; }
 
     private List<GameObject> availableSchedules = new List<GameObject>();
-    public List<GameObject> SchedulePrefabs = new List<GameObject>();
+  
+
+    public GameObject scheduleUI;
 
     public ScheduleDropZone availableSchelueZone;
 
@@ -39,22 +41,27 @@ public class AvailableScheduleManager : MonoBehaviour
 
     
 
-    public void UpdateSchedule()
+   
+    public void AddSchedule(ScheduleData schData = null,List < ScheduleData> schDatas = null)
     {
-       foreach (GameObject schedulePrefab in SchedulePrefabs)
+        if(schDatas != null)
         {
-            availableSchedules.Add(Instantiate(schedulePrefab, availableSchelueZone.transform));
-            
+            foreach (ScheduleData scheduleData in schDatas)
+            {
+                if (availableSchedules.Count <= LimitSchedule)
+                {
+                    GameObject schUI = Instantiate(scheduleUI,availableSchelueZone.transform);
+                    schUI.GetComponent<DraggableScheduleItem>()?.SetUP(scheduleData);
+                    availableSchedules.Add(schUI);
+                }
+                //추후 수정 필요
+            }
         }
-        availableSchelueZone.RefreshLayout(true, false);
-    }
-
-    public void AddSchedule(List<GameObject> schedules)
-    {
-        
-        foreach(GameObject schedule in schedules)
+        if (schData != null)
         {
-            availableSchedules.Add(Instantiate(schedule, availableSchelueZone.transform));
+            GameObject schUI = Instantiate(scheduleUI, availableSchelueZone.transform);
+            schUI.GetComponent<DraggableScheduleItem>()?.SetUP(schData);
+            availableSchedules.Add(schUI);
         }
         availableSchelueZone.RefreshLayout(true, false);
     }
@@ -63,11 +70,7 @@ public class AvailableScheduleManager : MonoBehaviour
 
     void Start()
     {
-        if (SchedulePrefabs.Count > 0 && SchedulePrefabs != null)
-        {
-            UpdateSchedule();
-            
-        }
+        
     }
     // Update is called once per frame
     void Update()

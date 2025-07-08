@@ -23,6 +23,12 @@ namespace RoomPlacementSystem
 
         private bool _isActuallyDragging = false;
 
+        public void SetUp(RoomData roomdata)
+        {
+            roomDataToRepresent = roomdata;
+            _itemImage.sprite = roomdata.roomIcon;
+        }
+
         void Awake()
         {
             _itemImage = GetComponent<Image>();

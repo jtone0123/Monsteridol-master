@@ -8,7 +8,7 @@ public class RoomSchedule : MonoBehaviour, IClickable
 {
     public RoomData roomData;
 
-    private List<GameObject> holdSchedule = new List<GameObject>();
+    private List<ScheduleData> holdSchedules = new List<ScheduleData>();
     private float oringinalScheduleTurnLate;
 
     private float CurrentTurnLate;
@@ -17,8 +17,8 @@ public class RoomSchedule : MonoBehaviour, IClickable
     {
         if (roomData != null)
         {
-           
-            holdSchedule.AddRange(roomData.GeneratedSchdules);
+
+            holdSchedules.AddRange(roomData.GeneratedSchdules);
             oringinalScheduleTurnLate = roomData.scheduleTurnLate;
         }
         else
@@ -60,7 +60,7 @@ public class RoomSchedule : MonoBehaviour, IClickable
     {
         if (CurrentTurnLate <= 0)
         {
-            AvailableScheduleManager.Instance.AddSchedule(holdSchedule);
+            AvailableScheduleManager.Instance.AddSchedule(null,holdSchedules);
             ResetSchedule();
         }
         else if(CurrentTurnLate >0)
