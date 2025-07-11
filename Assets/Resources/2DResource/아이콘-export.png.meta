@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: ca9743a450eb6f94d92b272d3bb7dfa6
+guid: c2dc48dbf9a1a4847a03a83c7c090987
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2415501329056222877
-    second: "\uC544\uC774\uCF58_0"
+      213: 46023583268489304
+    second: "\uC544\uC774\uCF58-export_0"
   - first:
-      213: -5299302826308549880
-    second: "\uC544\uC774\uCF58_1"
+      213: -8231873826323215674
+    second: "\uC544\uC774\uCF58-export_1"
   - first:
-      213: 2218978781409513511
-    second: "\uC544\uC774\uCF58_2"
+      213: -7464061656784845470
+    second: "\uC544\uC774\uCF58-export_2"
   - first:
-      213: 4159494419704791939
-    second: "\uC544\uC774\uCF58_3"
+      213: 7937705067783263190
+    second: "\uC544\uC774\uCF58-export_3"
   - first:
-      213: 735488395560037743
-    second: "\uC544\uC774\uCF58_4"
+      213: 4396476989140562561
+    second: "\uC544\uC774\uCF58-export_4"
   - first:
-      213: 1588149303293897720
-    second: "\uC544\uC774\uCF58_5"
+      213: -2089478644977528591
+    second: "\uC544\uC774\uCF58-export_5"
   - first:
-      213: 1218419350335589548
-    second: "\uC544\uC774\uCF58_6"
+      213: 8951322336797406287
+    second: "\uC544\uC774\uCF58-export_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,10 +90,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_0"
+      name: "\uC544\uC774\uCF58-export_0"
       rect:
         serializedVersion: 2
-        x: 46
-        y: 112
-        width: 30
-        height: 29
+        x: 469
+        y: 1129
+        width: 282
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 361be1fc65a6a7ed0800000000000000
-      internalID: -2415501329056222877
+      spriteID: 8584204843283a000800000000000000
+      internalID: 46023583268489304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_1"
+      name: "\uC544\uC774\uCF58-export_1"
       rect:
         serializedVersion: 2
-        x: 79
-        y: 112
-        width: 29
-        height: 29
+        x: 799
+        y: 1129
+        width: 272
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 803c7a808281576b0800000000000000
-      internalID: -5299302826308549880
+      spriteID: 6ca4b2a8e5282cd80800000000000000
+      internalID: -8231873826323215674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_2"
+      name: "\uC544\uC774\uCF58-export_2"
       rect:
         serializedVersion: 2
-        x: 111
-        y: 112
-        width: 30
-        height: 29
+        x: 1119
+        y: 1129
+        width: 282
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7201b0ee1756bce10800000000000000
-      internalID: 2218978781409513511
+      spriteID: 265c9bd28735a6890800000000000000
+      internalID: -7464061656784845470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_3"
+      name: "\uC544\uC774\uCF58-export_3"
       rect:
         serializedVersion: 2
-        x: 142
-        y: 112
-        width: 29
-        height: 29
+        x: 1429
+        y: 1129
+        width: 272
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38349b3032e79b930800000000000000
-      internalID: 4159494419704791939
+      spriteID: 6d31a0114b4682e60800000000000000
+      internalID: 7937705067783263190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_4"
+      name: "\uC544\uC774\uCF58-export_4"
       rect:
         serializedVersion: 2
-        x: 46
-        y: 76
-        width: 30
-        height: 29
+        x: 469
+        y: 769
+        width: 282
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6d27c98ccaf43a00800000000000000
-      internalID: 735488395560037743
+      spriteID: 182f6e0378c630d30800000000000000
+      internalID: 4396476989140562561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_5"
+      name: "\uC544\uC774\uCF58-export_5"
       rect:
         serializedVersion: 2
-        x: 79
-        y: 76
-        width: 30
-        height: 29
+        x: 799
+        y: 769
+        width: 282
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fbed11806d3a0610800000000000000
-      internalID: 1588149303293897720
+      spriteID: 1f099503e3ea003e0800000000000000
+      internalID: -2089478644977528591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC544\uC774\uCF58_6"
+      name: "\uC544\uC774\uCF58-export_6"
       rect:
         serializedVersion: 2
-        x: 112
-        y: 76
-        width: 29
-        height: 29
+        x: 1129
+        y: 769
+        width: 272
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cac073491f1b8e010800000000000000
-      internalID: 1218419350335589548
+      spriteID: f4434da3d3c793c70800000000000000
+      internalID: 8951322336797406287
       vertices: []
       indices: 
       edges: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0e3730ffdf4b14245b0d64e94d10ad55
     internalID: 0
     vertices: []
     indices: 
@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\uC544\uC774\uCF58-export_0": 46023583268489304
+      "\uC544\uC774\uCF58-export_1": -8231873826323215674
+      "\uC544\uC774\uCF58-export_2": -7464061656784845470
+      "\uC544\uC774\uCF58-export_3": 7937705067783263190
+      "\uC544\uC774\uCF58-export_4": 4396476989140562561
+      "\uC544\uC774\uCF58-export_5": -2089478644977528591
+      "\uC544\uC774\uCF58-export_6": 8951322336797406287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,9 +15,23 @@ namespace RoomPlacementSystem
 
         [Header("배치 관련")]
         public GameObject roomPrefab; // 실제로 슬롯에 배치될 방의 게임오브젝트 프리팹
+        [System.Serializable]
+        public class GeneratedScheduleInfo
+        {
+            public ScheduleData GeneratedSchdule;
+            public float scheduleTurnLate;
+        }
+        [System.Serializable]
+        public class normalScheduleInfo
+        {
+            public ScheduleData normalSchedule;
+            public float normalScheduleLimit;
+        }
 
         [Header("스케줄 관련")]
-        public List<ScheduleData> GeneratedSchdules;
-        public float scheduleTurnLate;
+        public List<GeneratedScheduleInfo> Schedules;
+
+        public List<normalScheduleInfo> normalSchedulesInfo;
+       
     }
 }

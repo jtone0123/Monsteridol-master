@@ -7,9 +7,9 @@ using RoomPlacementSystem;
 public class RoomSchedule : MonoBehaviour, IClickable
 {
     public RoomData roomData;
-
-    private List<ScheduleData> holdSchedules = new List<ScheduleData>();
-    private float oringinalScheduleTurnLate;
+    public List<RoomData.GeneratedScheduleInfo> schedulesTemp;
+   
+    
 
     private float CurrentTurnLate;
 
@@ -17,9 +17,8 @@ public class RoomSchedule : MonoBehaviour, IClickable
     {
         if (roomData != null)
         {
-
-            holdSchedules.AddRange(roomData.GeneratedSchdules);
-            oringinalScheduleTurnLate = roomData.scheduleTurnLate;
+            schedulesTemp.AddRange(roomData.Schedules);
+            
         }
         else
         {
@@ -36,37 +35,62 @@ public class RoomSchedule : MonoBehaviour, IClickable
     void Start()
     {
         TurnManager.instance.ChangeTurn += CalculateScheduleTurn;
-        ResetSchedule();
+       
     }
 
-    public void CalculateScheduleTurn(float lessturn)
+    public void CalculateScheduleTurn(float turnAmount)
     {
-        CurrentTurnLate -= lessturn;
-        Debug.Log("ÅÏ Äð ÁÙ¾úÀ½");
+        for (int i = 0; i < schedulesTemp.Count; i++)
+        {
+            RoomData.GeneratedScheduleInfo sch = schedulesTemp[i];
+            sch.scheduleTurnLate -= turnAmount;
+        }
+        
     }
 
-    public void ResetSchedule()
+    public void GetNormalSchedule(float turnAmount)
     {
-        CurrentTurnLate = oringinalScheduleTurnLate;
-    }
+        if(roomData.normalSchedulesInfo != null)
+        {
+            for (int i = 0; i < roomData.normalSchedulesInfo.Count; i++)
+            {
+                RoomData.normalScheduleInfo nomalSchTemp = roomData.normalSchedulesInfo[i];
+                float tempSchduleCount = 0f;
+                foreach (GameObject schUI in AvailableScheduleManager.Instance.availableSchedules)
+                {
+                    if (nomalSchTemp.normalSchedule == schUI.GetComponent<DraggableScheduleItem>().scheduleData)
+                    {
+                        tempSchduleCount++;
+                    }
+                }
+                if (tempSchduleCount <= nomalSchTemp.normalScheduleLimit)
+                {
+                    AvailableScheduleManager.Instance.AddSchedule(nomalSchTemp.normalSchedule);
+                }
+            }
+        }
+     }
 
-    
+
     public void OnClick()
     {
-        Debug.Log("Å¬¸¯µÊ");
+       
         GetSchedule();
     }
     public void GetSchedule()
     {
-        if (CurrentTurnLate <= 0)
+        if (roomData.Schedules != null)
         {
-            AvailableScheduleManager.Instance.AddSchedule(null,holdSchedules);
-            ResetSchedule();
-        }
-        else if(CurrentTurnLate >0)
-        {
-            Debug.Log("Äð ³²À½");
-            return;
+            for (int i = 0; i < schedulesTemp.Count; i++)
+            {
+                RoomData.GeneratedScheduleInfo sch = schedulesTemp[i];
+                if (sch.scheduleTurnLate <= 0)
+                {
+                    RoomData.GeneratedScheduleInfo originalSch = roomData.Schedules[i];
+                    AvailableScheduleManager.Instance.AddSchedule(sch.GeneratedSchdule);
+                    sch.scheduleTurnLate = originalSch.scheduleTurnLate; //¸®¼Â
+                }
+            }
         }
     }
 

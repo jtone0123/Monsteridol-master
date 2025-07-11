@@ -10,7 +10,7 @@ public class AvailableScheduleManager : MonoBehaviour
     //½Ì±ÛÅæ
     public static AvailableScheduleManager Instance { get; private set; }
 
-    private List<GameObject> availableSchedules = new List<GameObject>();
+    public List<GameObject> availableSchedules = new List<GameObject>();
   
 
     public GameObject scheduleUI;
@@ -42,21 +42,9 @@ public class AvailableScheduleManager : MonoBehaviour
     
 
    
-    public void AddSchedule(ScheduleData schData = null,List < ScheduleData> schDatas = null)
+    public void AddSchedule(ScheduleData schData)
     {
-        if(schDatas != null)
-        {
-            foreach (ScheduleData scheduleData in schDatas)
-            {
-                if (availableSchedules.Count <= LimitSchedule)
-                {
-                    GameObject schUI = Instantiate(scheduleUI,availableSchelueZone.transform);
-                    schUI.GetComponent<DraggableScheduleItem>()?.SetUP(scheduleData);
-                    availableSchedules.Add(schUI);
-                }
-                //ÃßÈÄ ¼öÁ¤ ÇÊ¿ä
-            }
-        }
+           
         if (schData != null)
         {
             GameObject schUI = Instantiate(scheduleUI, availableSchelueZone.transform);
