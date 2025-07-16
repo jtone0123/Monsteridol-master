@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     // 1. 싱글톤 인스턴스
     public static UIManager instance;
 
+    public string description;
 
     public GameObject turnButton;
     public GameObject startButton;
@@ -29,7 +30,8 @@ public class UIManager : MonoBehaviour
         mainMenuPanel,
         scheduleManagementPanel,
         roomPlacementPanel,
-        itemUsingPanel
+        itemUsingPanel,
+        shopPanal
     }
 
     // 4. 패널 관리를 위한 Dictionary

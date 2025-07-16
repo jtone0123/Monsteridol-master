@@ -12,7 +12,10 @@ namespace RoomPlacementSystem
         [Header("기본 정보")]
         public string roomName = "새 방";
         public Sprite roomIcon; // 건설 메뉴 UI에 사용될 아이콘
-
+        public int price;    
+        [TextArea(3, 5)]
+        public string description = "";
+       
         [Header("배치 관련")]
         public GameObject roomPrefab; // 실제로 슬롯에 배치될 방의 게임오브젝트 프리팹
         [System.Serializable]

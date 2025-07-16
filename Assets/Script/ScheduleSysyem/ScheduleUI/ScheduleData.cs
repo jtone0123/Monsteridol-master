@@ -15,11 +15,12 @@ public class ScheduleData : ScriptableObject
     public string scheduleName = "새 스케줄";
     [TextArea(3, 5)]
     public string description = "스케줄에 대한 설명입니다.";
-    
+
+    public float excuteTime;
     public int size = 1; // 스케줄 실행 비용 
     public int price;
 
-
+    public string scheduleAnimText;
 
     [Header("실행 효과")]
     [Range(0f, 1f)] // 0.0 (0%) ~ 1.0 (100%)

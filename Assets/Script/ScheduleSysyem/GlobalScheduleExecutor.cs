@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq; // Linq 사용을 위해 추가
+using System.Linq;
+using UnityEditor.Animations; // Linq 사용을 위해 추가
 
 /// <summary>
 /// 여러 아이돌의 정보를 통합 관리하기 위한 도우미 클래스입니다.
@@ -278,6 +279,8 @@ public class GlobalScheduleExecutor : MonoBehaviour
                     Debug.LogWarning($"아이돌 '{idolCharacter.characterName}': '{currentScheduleData.scheduleName}' 스케줄에 NavPoint가 설정되지 않았거나 ScheduleNavType 컴포넌트가 없습니다. 이동 없이 스케줄을 실행합니다.");
                 }
 
+                currentManagedIdol.idolCharacter.GetComponent<Animator>().Play("Vamp_Vocal");
+                yield return new WaitForSeconds(currentScheduleData.excuteTime);
                 PerformScheduleBundle(currentScheduleData, bundleSizeN, currentManagedIdol.pendingModifiers, idolCharacter, idolMovement);
                 currentManagedIdol.pendingModifiers.Reset();
 

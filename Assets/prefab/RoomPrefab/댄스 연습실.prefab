@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8062451633071794354, guid: dd5f0ccab38beda49b578400996bff1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomData: {fileID: 11400000, guid: 9725b37395d1ec34cb4858a68c5f29b6, type: 2}
+  schedulesTemp: []
 --- !u!114 &4325594952960823908
 MonoBehaviour:
   m_ObjectHideFlags: 0

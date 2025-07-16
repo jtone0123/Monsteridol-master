@@ -175,7 +175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7145198348311737387, guid: 09f2864463fddcc4b9f52e53b4e06839, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomData: {fileID: 11400000, guid: 17594e4732de3ac4ea81cc6f19061e49, type: 2}
+  schedulesTemp: []
 --- !u!61 &2987004360971833812
 BoxCollider2D:
   m_ObjectHideFlags: 0

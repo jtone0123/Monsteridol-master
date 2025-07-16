@@ -164,7 +164,7 @@ public class IdolMovement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
-
+   
     public bool IsCurrentlyMoving()
     {
         return isMoving;

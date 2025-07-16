@@ -207,7 +207,7 @@ public class DraggableScheduleItem : MonoBehaviour, IBeginDragHandler, IDragHand
             Debug.Log($"[{ItemNameDebug}] 아이템이 유효하지 않은 곳 또는 비큐 존에 드롭되어 원래 위치로 복귀.");
             transform.SetParent(originalParent);
             transform.SetSiblingIndex(originalSiblingIndex);
-            originalParent.GetComponent<ScheduleDropZone>()?.RefreshLayout(false);
+            originalParent.GetComponent<ScheduleDropZone>()?.RefreshLayout(false);  
         }
 
         currentDropZoneTarget?.NotifyItemDragExited(this);

@@ -17,8 +17,10 @@ MonoBehaviour:
   description: "\uC131\uACF5 \uD655\uB960:100%\n\uBCF4\uCEEC +2\n\uC5F0\uC18D\uD6A8\uACFC:
     \uC2A4\uD0EF \uC0C1\uC2B9\uB7C9 +4\n\uC2A4\uD2B8\uB808\uC2A4 \uBCC0\uD654\uB7C9:
     +2(\uC131\uACF5),+10(\uC2E4\uD328)"
+  excuteTime: 0
   size: 1
   price: 0
+  scheduleAnimText: 
   baseSuccessRate: 0.8
   primaryTargetStat: 1
   primaryStatImprovementAmount: 5

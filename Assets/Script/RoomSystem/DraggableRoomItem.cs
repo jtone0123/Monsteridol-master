@@ -49,6 +49,10 @@ namespace RoomPlacementSystem
             {
                 _itemImage.sprite = roomDataToRepresent.roomIcon;
             }
+            if(roomDataToRepresent != null)
+            {
+                SetUp(roomDataToRepresent);
+            }
         }
 
         public void OnBeginDrag(PointerEventData eventData)
